@@ -4,7 +4,7 @@ import AudioToolbox
 class AudioNodeRemoteIO : NSObject {
 	var audioUnitDescription :AudioComponentDescription {
 		get {
-			return  AudioComponentDescription(componentType: OSType(kAudioUnitType_Output),
+			return AudioComponentDescription(componentType: OSType(kAudioUnitType_Output),
 				componentSubType: OSType(kAudioUnitSubType_RemoteIO),
 				componentManufacturer: OSType(kAudioUnitManufacturer_Apple),
 				componentFlags: 0,
